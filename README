@@ -1,0 +1,4 @@
+    mvn -P docker package
+    docker build docker -t baztian/ejb-mini
+    docker run baztian/ejb-mini ...
+    curl -i -H "application/json" http://localhost:18080/ejb-mini/resources/mytrigger
